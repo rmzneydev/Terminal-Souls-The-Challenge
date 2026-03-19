@@ -26,7 +26,7 @@ def verify_winner(hero_hp:int, enemy_hp:int):
     else:
         return False
         
-def critical_system(damage):
+def critical_system(damage: int):
     probability = random.randint(1,100)
     if probability <=10:
         damage = damage * 2
