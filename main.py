@@ -1,12 +1,10 @@
-import random
-
 from turnoJugador import (playerTurn)
 from turnoEnemigo import (enemyTurn)
 from commons import (show_state, verify_winner)
 
 
 hp_hero = 100
-hp_enemy = 50
+hp_enemy = 120
 potions = 3  
 
 
@@ -30,7 +28,7 @@ while winner == False:
     
     winner = verify_winner(hp_hero, hp_enemy)
     if winner: 
-        winner = True
+        continue
 
     hp_hero = enemyTurn(hp_hero)
 
@@ -38,13 +36,13 @@ while winner == False:
 
 
 
-    # Check if the enemy died
-    if hp_enemy == 0:
-        print("\n ✅️¡YOU WIN!✅️")
-       
+# Check if the enemy died
+if hp_enemy == 0:
+    print("\n ✅️¡YOU WIN!✅️")
+    
 
-    # Check if the player died
-    elif hp_hero == 0:
-        print("\n ❌¡YOU LOSE!❌")
+# Check if the player died
+elif hp_hero == 0:
+    print("\n ❌¡YOU LOSE!❌")
       
         
