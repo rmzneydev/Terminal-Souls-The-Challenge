@@ -6,7 +6,7 @@ from commons import (show_state, verify_winner)
 
 
 hp_hero = 100
-hp_enemy = 120
+hp_enemy = 50
 potions = 3  
 
 
@@ -28,10 +28,15 @@ while winner == False:
 
     hp_hero, hp_enemy, potions = playerTurn(hp_hero, hp_enemy, potions)
     
+    winner = verify_winner(hp_hero, hp_enemy)
+    if winner: 
+        winner = True
 
     hp_hero = enemyTurn(hp_hero)
 
     winner = verify_winner(hp_hero, hp_enemy)
+
+
 
     # Check if the enemy died
     if hp_enemy == 0:
