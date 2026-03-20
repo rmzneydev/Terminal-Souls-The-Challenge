@@ -17,8 +17,6 @@ enemyName = "Nemesis ☠️"
 winner = verify_winner(hp_hero, hp_enemy)
 
 
-
-S
 while winner == False:
 
 
