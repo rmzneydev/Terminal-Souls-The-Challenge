@@ -35,11 +35,11 @@ while winner == False:
 
     # Check if the enemy died
     if hp_enemy == 0:
-        print("\n 💥¡YOU WIN!💥")
+        print("\n ✅️¡YOU WIN!✅️")
        
 
     # Check if the player died
-    if hp_hero == 0:
-        print("\n 💀¡YOU LOSE!💀")
+    elif hp_hero == 0:
+        print("\n ❌¡YOU LOSE!❌")
       
         
