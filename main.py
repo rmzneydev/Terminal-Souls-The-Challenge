@@ -35,12 +35,12 @@ while winner == False:
 
     winner = verify_winner(hp_hero, hp_enemy)
 
-    # Verificar si el enemigo murió
+    # Check if the enemy died
     if hp_enemy == 0:
         print("\n 💥¡YOU WIN!💥")
        
 
-    # Verificar si el jugador murió
+    # Check if the player died
     if hp_hero == 0:
         print("\n 💀¡YOU LOSE!💀")
       

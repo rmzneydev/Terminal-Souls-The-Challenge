@@ -41,16 +41,16 @@ def playerTurn(hp_hero, hp_enemy, potions):
 
             turno_valido = True
             
-        # Cure (recupera 20 HP solo si tiene posiones)
+        # Cure (recovers 20 HP only if it has potions)
 
         elif selection == 2:
 
             if potions > 0: 
-                healthBefore = hp_hero #Guardar la vida antes de operar
+                healthBefore = hp_hero #Save lives before operating
 
-                hp_hero = hp_hero + 20 # Sumar la posion
+                hp_hero = hp_hero + 20 # Add the position
 
-                if hp_hero > 100: #Limitar la vida máxima
+                if hp_hero > 100: #Limit maximum life
                     hp_hero = 100
                 
                 healing = hp_hero - healthBefore
