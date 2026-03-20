@@ -23,7 +23,7 @@ while winner == False:
 
 
 
-    show_state(heroName, hp_hero, enemyName, hp_enemy)
+    show_state(heroName, hp_hero, enemyName, hp_enemy, potions)
 
 
     # Player Turn
