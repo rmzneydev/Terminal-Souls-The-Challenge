@@ -32,10 +32,14 @@ def playerTurn(hp_hero, hp_enemy, potions):
         if selection == 1:
             damage = generate_damage(10,25)
             damage = critical_system(damage)
-            hp_enemy -= damage
+            
 
-            if hp_enemy < 0:
+            if damage >= hp_enemy:
                 hp_enemy = 0
+            else:
+                hp_enemy -= damage
+
+            
             print(f'You dealt {damage} damage. Monster have {hp_enemy} of health remaining.')
             
 
@@ -80,7 +84,13 @@ def playerTurn(hp_hero, hp_enemy, potions):
 
                 damage = generate_damage(30,50) # Dame function here
                 damage = critical_system(damage)
-                hp_enemy -= damage
+                
+
+                if damage >= hp_enemy:
+                    hp_enemy = 0 
+                else: 
+                    hp_enemy -= damage
+
 
                 print(f'Successful special ability! You did {damage} damage')
 
