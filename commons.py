@@ -13,15 +13,15 @@ def show_state(hero_name: str, hero_hp:int, enemy_name:str, enemy_hp:int, potion
     print(f"   NAME: {hero_name}")
     print(f"   HP: {hero_hp}/{max_hero_hp}")
     print(f"   Potions: {potions}")
-    print(f"   LIFE [{"♥️"*hero_hp}{"-"*lost_hp}]")
+    print(f"   LIFE [{"█"*hero_hp}{"░"*lost_hp}]")
     print("═"*135)
     lost_hp = max_enemy_hp - enemy_hp
     print(" > ENEMY")
     print(f"   NAME: {enemy_name}")
     print(f"   HP: {enemy_hp}/{max_enemy_hp}")
-    print(f"   LIFE [{"♥️"*enemy_hp}{"-"*lost_hp}]")
+    print(f"   LIFE [{"█"*enemy_hp}{"░"*lost_hp}]")
     print("╚"+"═"*134+"╝")
-          
+        
 
 
 def verify_winner(hero_hp:int, enemy_hp:int):
