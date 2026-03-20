@@ -4,9 +4,6 @@ from commons import (generate_damage,critical_system)
 
 
 
-# hp_hero = 60
-# hp_enemy = 120
-# potions = 3  
 
 
 def playerTurn(hp_hero, hp_enemy, potions):

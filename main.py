@@ -1,5 +1,5 @@
-from turnoJugador import (playerTurn)
-from turnoEnemigo import (enemyTurn)
+from turnPlayer import (playerTurn)
+from enemyTurn import (enemyTurn)
 from commons import (show_state, verify_winner)
 
 
