@@ -9,9 +9,9 @@ from commons import (generate_damage,critical_system)
 def playerTurn(hp_hero, hp_enemy, potions):
 
 
-    turno_valido = False
+    validatedShift = False
 
-    while turno_valido == False:
+    while validatedShift == False:
 
         print("\n ------🧌  YOUR TURN 🧌------\n")
         print("1. Attack")
@@ -40,7 +40,7 @@ def playerTurn(hp_hero, hp_enemy, potions):
             print(f'You dealt {damage} damage. Monster have {hp_enemy} of health remaining.')
             
 
-            turno_valido = True
+            validatedShift = True
             
         # Cure (recovers 20 HP only if it has potions)
 
@@ -69,7 +69,7 @@ def playerTurn(hp_hero, hp_enemy, potions):
                 print("You haven't potions")
                 continue
 
-            turno_valido = True
+            validatedShift = True
 
         # Special Hability (High damage between 30-50 but with a 50% chance of hitting)
 
@@ -94,7 +94,7 @@ def playerTurn(hp_hero, hp_enemy, potions):
             else:
                 print("Special ability failure")
 
-            turno_valido = True
+            validatedShift = True
 
         else: 
             print("Invalid option")
