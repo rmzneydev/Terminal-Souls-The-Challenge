@@ -1,7 +1,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
 [![GitHub contributors](https://img.shields.io/github/contributors/rmzneydev/Terminal-Souls-The-Challenge)](https://github.com/rmzneydev/Terminal-Souls-The-Challenge/graphs/contributors)
 
-# 🧌 Turn-Based Battle Game (Python CLI)
+# 🧌 Terminal Souls: The Challenge
 
 A simple turn-based combat game built in Python where a hero battles an
 enemy using attacks, healing, and special abilities. This project
